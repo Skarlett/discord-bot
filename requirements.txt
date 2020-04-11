@@ -1,0 +1,3 @@
+aiohttp
+discord.py<=1.2.5
+async-sqlalchemy

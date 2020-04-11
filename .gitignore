@@ -1,0 +1,6 @@
+.log
+.err
+.idea
+.vscode
+.pyc
+__pycache__

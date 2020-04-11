@@ -1,0 +1,21 @@
+upstream aiohttp {
+  server 127.0.0.1:8888 fail_timeout=0;
+}
+
+server {
+    listen       80;
+    server_name  _;
+    location / {
+         proxy_set_header Host $http_host;
+         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+         proxy_redirect off;
+         proxy_buffering off;
+         proxy_pass http://aiohttp;
+    }
+    location /static {
+      root /var/www/botlistener/public/static;
+    }
+
+    access_log  logs/bot-listener.log combined;
+}
+

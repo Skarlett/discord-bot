@@ -1,6 +1,5 @@
 # discord-bot
-A partially completed discord bot based on the [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
-design pattern allowing for developers to rapidly expand and isolate pieces of the project.
+A discord bot based on the [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) design pattern.
 This project was originally written to support a gaming server (for minecraft) that is no longer in use. 
 
 ## Operations
